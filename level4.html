@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 4 – Risk & Survival</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600;700&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: black;
+    }
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      background-color: #002f4a;
+      padding-top: 60px;
+      transition: 0.3s;
+      overflow-y: auto;
+      z-index: 999;
+    }
+    .sidebar a {
+      padding: 12px 20px;
+      text-decoration: none;
+      font-size: 1rem;
+      color: white;
+      display: block;
+    }
+    .sidebar a:hover {
+      background-color: #014e79;
+    }
+    .hamburger {
+      font-size: 36px;
+      cursor: pointer;
+      position: fixed;
+      top: 10px;
+      left: 20px;
+      color: white;
+      background-color: #002f4a;
+      padding: 2px 6px;
+      border-radius: 3px;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px 40px 20px;
+    }
+    h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: 2.4rem;
+      background-color: #002f4a;
+      color: white;
+      padding: 20px;
+      margin-bottom: 0.5em;
+    }
+    h2 {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      color: #002f4a;
+    }
+    p, ul {
+      font-size: 1rem;
+      margin-bottom: 1.2em;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .mission {
+      background-color: #002f4a;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 2.5rem;
+    }
+    .mission h2 {
+      color: white;
+      font-size: 1.4rem;
+    }
+    a {
+      color: #003d7a;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hamburger" onclick="toggleSidebar()">☰</div>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="index.html">🏠 Intro Zone</a>
+    <a href="level0.html">🧠 Level 0 – Know Yourself</a>
+    <a href="quiz.html">🧪 Archetype Quiz</a>
+    <a href="level1.html">🛒 Level 1 – Place a Trade</a>
+    <a href="level2.html">📈 Level 2 – Read a Chart</a>
+    <a href="level3.html">📋 Level 3 – Build Your Watchlist</a>
+    <a href="level4.html">🛡️ Level 4 – Risk & Survival</a>
+    <a href="level5.html">⚔️ Level 5 – Pick Your Market</a>
+  </div>
+
+  <div class="container">
+    <h1>🛡️ Level 4: Risk & Survival</h1>
+    <p>This is where the game really begins. Every trader has winning trades. Only the disciplined ones survive the drawdowns.</p>
+
+    <h2>🎯 Objective</h2>
+    <p>Learn how to stay in the game by controlling your risk and protecting your capital.</p>
+    <ul>
+      <li>Understand how to size positions relative to account size and risk tolerance</li>
+      <li>Learn about stop losses, risk/reward ratios, and capital preservation</li>
+      <li>Develop emotional habits for surviving slumps, drawdowns, and overconfidence</li>
+    </ul>
+
+    <h2>🔍 Terms to Know</h2>
+    <ul>
+      <li><strong>Risk per Trade:</strong> The dollar amount you're willing to lose on a single trade</li>
+      <li><strong>Position Size:</strong> The number of shares/contracts based on your risk level</li>
+      <li><strong>Drawdown:</strong> The decline from a peak account value to a low</li>
+      <li><strong>Risk/Reward:</strong> The ratio of potential gain vs potential loss</li>
+      <li><strong>Stop Loss:</strong> A predetermined price to cut the trade if it goes against you</li>
+      <li><strong>Max Daily Loss:</strong> A rule that tells you when to stop trading for the day</li>
+    </ul>
+
+    <p>Track all of this inside the <a href="https://docs.google.com/spreadsheets/d/1x3gxxL23jEqFlJ1EM8_rBRTmLOdd6k3x0cBvREtMef0/edit?usp=sharing" target="_blank">Disciplined Trader Journal</a>.</p>
+
+    <h2>📚 Wisdom from the Greats</h2>
+    <ul>
+      <li><em>“The most important thing is to play great defense.”</em> — Paul Tudor Jones</li>
+      <li><em>“In the long run, you’re trading your beliefs, not the market.”</em> — Mark Douglas</li>
+      <li><em>“I always sell down to the sleeping point.”</em> — Jesse Livermore</li>
+    </ul>
+    <p>Risk management isn’t about being cautious — it’s about staying alive long enough to get lucky.</p>
+
+    <h2>🧠 Why This Matters</h2>
+    <ul>
+      <li><strong>Most traders blow up not from one trade — but from not knowing when to stop.</strong></li>
+      <li><strong>Capital is your freedom.</strong> If you lose it, the game is over. If you protect it, you're always in the game.</li>
+      <li><strong>Confidence comes from survival.</strong> Every risk rule you set is a vote for your future self.</li>
+    </ul>
+
+    <div class="mission">
+      <h2>🎮 Your Mission</h2>
+      <p>Build a personal risk profile and test it live.</p>
+      <ul>
+        <li>✅ Set your max risk per trade (start with 1% or less)</li>
+        <li>✅ Use the calculator in the journal to size a position</li>
+        <li>✅ Define a stop loss and risk/reward before entering</li>
+        <li>✅ If hit your max daily loss — stop. No revenge trades.</li>
+        <li>✅ Log your emotions when losing — do you spiral or stay calm?</li>
+      </ul>
+      <p>Survival isn’t optional. It’s the whole game. Master this level and you’ll outlast 90% of traders.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("mySidebar");
+      sidebar.style.left = (sidebar.style.left === "0px") ? "-250px" : "0px";
+    }
+  </script>
+
+</body>
+</html>

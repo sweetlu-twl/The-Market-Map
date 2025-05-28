@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 1 – Place a Trade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600;700&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: black;
+    }
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      background-color: #002f4a;
+      padding-top: 60px;
+      transition: 0.3s;
+      overflow-y: auto;
+      z-index: 999;
+    }
+    .sidebar a {
+      padding: 12px 20px;
+      text-decoration: none;
+      font-size: 1rem;
+      color: white;
+      display: block;
+    }
+    .sidebar a:hover {
+      background-color: #014e79;
+    }
+    .hamburger {
+      font-size: 36px;
+      cursor: pointer;
+      position: fixed;
+      top: 10px;
+      left: 20px;
+      color: white;
+      background-color: #002f4a;
+      padding: 2px 6px;
+      border-radius: 3px;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px 40px 20px;
+    }
+    h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: 2.4rem;
+      background-color: #002f4a;
+      color: white;
+      padding: 20px;
+      margin-bottom: 0.5em;
+    }
+    h2 {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      color: #002f4a;
+    }
+    p, ul {
+      font-size: 1rem;
+      margin-bottom: 1.2em;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .mission {
+      background-color: #002f4a;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 2.5rem;
+    }
+    .mission h2 {
+      color: white;
+      font-size: 1.4rem;
+    }
+    a.journal-link {
+      color: #002f4a;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    .mission a.journal-link {
+      color: #ffd700; /* Gold/yellow for contrast */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hamburger" onclick="toggleSidebar()">☰</div>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="index.html">🏠 Intro Zone</a>
+    <a href="level0.html">🧠 Level 0 – Know Yourself</a>
+    <a href="quiz.html">🧪 Archetype Quiz</a>
+    <a href="level1.html">🛒 Level 1 – Place a Trade</a>
+    <a href="level2.html">📈 Level 2 – Read a Chart</a>
+    <a href="level3.html">📋 Level 3 – Build Your Watchlist</a>
+    <a href="level4.html">🛡️ Level 4 – Risk & Survival</a>
+    <a href="level5.html">⚔️ Level 5 – Pick Your Market</a>
+  </div>
+
+  <div class="container">
+    <h1>🛒 Level 1: Place a Trade</h1>
+    <p>This is your initiation. We’re not learning just to push buttons — we’re here to understand how the investing world really works by stepping into it.</p>
+
+    <h2>🎯 What You’ll Learn</h2>
+    <ul>
+      <li>How to place a trade (market vs limit orders)</li>
+      <li>What position sizing really means</li>
+      <li>Why order execution teaches more than reading books ever could</li>
+    </ul>
+
+    <h2>🧭 Why This Is Foundational</h2>
+    <ul>
+      <li><strong>You’re building fluency</strong> — placing a trade connects theory to reality.</li>
+      <li><strong>You’ll learn by watching yourself</strong> — emotions, reactions, discipline. It’s all data.</li>
+      <li><strong>It unlocks context</strong> — terms like liquidity, slippage, bid/ask will now mean something.</li>
+    </ul>
+
+    <h2>🔧 What You’ll Need</h2>
+    <ul>
+      <li>A brokerage account (demo or live)</li>
+      <li>A basic asset (start with one stock or ETF)</li>
+      <li>A journal or tracker — you can <a class="journal-link" href="https://docs.google.com/spreadsheets/d/1x3gxxL23jEqFlJ1EM8_rBRTmLOdd6k3x0cBvREtMef0/edit?usp=sharing" target="_blank">use this template</a></li>
+      <li>10 minutes of focused time and curiosity</li>
+    </ul>
+
+    <h2>📘 Concepts to Know</h2>
+    <ul>
+      <li><strong>Market Order</strong>: You buy/sell instantly at best available price.</li>
+      <li><strong>Limit Order</strong>: You set the price and wait to be filled.</li>
+      <li><strong>Position Size</strong>: How much of your account you're risking. It's not about “how many shares” — it’s about “how much risk.”</li>
+    </ul>
+    <p>Need help understanding more terms? Check the <a class="journal-link" href="https://docs.google.com/spreadsheets/d/1x3gxxL23jEqFlJ1EM8_rBRTmLOdd6k3x0cBvREtMef0/edit?gid=776881889#gid=776881889" target="_blank">Glossary tab in the journal</a>.</p>
+
+    <div class="mission">
+      <h2>🎮 Your Mission</h2>
+      <p>Place one small trade. It can be on a simulator or with $10(RISK ONLY WHAT YOU CAN AFFORD TO LOSE). Your goal: understand how it feels to go from observer to participant.</p>
+      <ul>
+        <li>✅ Pick your asset</li>
+        <li>✅ Choose market or limit order</li>
+        <li>✅ Record your reasoning, size, entry, and emotions</li>
+      </ul>
+      <p>Use the <a class="journal-link" href="https://docs.google.com/spreadsheets/d/1x3gxxL23jEqFlJ1EM8_rBRTmLOdd6k3x0cBvREtMef0/edit?usp=sharing" target="_blank">trading journal</a> to track the whole experience. This habit will compound faster than any trade return ever could.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("mySidebar");
+      sidebar.style.left = (sidebar.style.left === "0px") ? "-250px" : "0px";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Market Map – Archetype Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600;700&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: black;
+    }
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      background-color: #002f4a;
+      padding-top: 60px;
+      transition: 0.3s;
+      overflow-y: auto;
+      z-index: 999;
+    }
+    .sidebar a {
+      padding: 12px 20px;
+      text-decoration: none;
+      font-size: 1rem;
+      color: white;
+      display: block;
+    }
+    .sidebar a:hover {
+      background-color: #014e79;
+    }
+    .hamburger {
+      font-size: 36px;
+      cursor: pointer;
+      position: fixed;
+      top: 10px;
+      left: 20px;
+      color: white;
+      background-color: #002f4a;
+      padding: 2px 6px;
+      border-radius: 3px;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px 40px 20px;
+    }
+    h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: 2.4rem;
+      background-color: #002f4a;
+      color: white;
+      padding: 20px;
+      margin-bottom: 0.5em;
+    }
+    h2 {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      color: #002f4a;
+    }
+    .question {
+      margin-bottom: 2rem;
+    }
+    label {
+      display: block;
+      margin: 8px 0;
+      padding: 10px 14px;
+      border: 2px solid #002f4a;
+      border-radius: 5px;
+      background: white;
+      cursor: pointer;
+    }
+    label:hover {
+      background-color: #e5f3ff;
+    }
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+    #submitQuiz {
+      margin-top: 2rem;
+      padding: 12px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      background-color: #002f4a;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    #submitQuiz:hover {
+      background-color: #014e79;
+    }
+    #result {
+      margin-top: 2rem;
+      background-color: #002f4a;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      display: none;
+      text-align: center;
+    }
+    #result h2 {
+      font-family: 'EB Garamond', serif;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    #result p {
+      font-size: 1.5rem;
+      line-height: 2.5;
+    }
+    .more-link {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .more-link a {
+      font-weight: bold;
+      color: #002f4a;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="hamburger" onclick="toggleSidebar()">☰</div>
+  <div id="mySidebar" class="sidebar">
+    <a href="index.html">🏠 Intro Zone</a>
+    <a href="level0.html">🧠 Level 0 – Know Yourself</a>
+    <a href="quiz.html">🧪 Archetype Quiz</a>
+    <a href="level1.html">🛒 Level 1 – Place a Trade</a>
+    <a href="level2.html">📈 Level 2 – Read a Chart</a>
+    <a href="level3.html">📋 Level 3 – Build Your Watchlist</a>
+    <a href="level4.html">🛡️ Level 4 – Risk & Survival</a>
+    <a href="level5.html">⚔️ Level 5 – Pick Your Market</a>
+  </div>
+  <div class="container">
+    <h1>🧪 What Type of Trader Are You?</h1>
+    <form id="quizForm">
+      <!-- All quiz questions here -->
+      <div class="question">
+        <h2>1. Why do you want to trade?</h2>
+        <label><input type="checkbox" name="q1" value="oak"> A. To build long-term wealth and freedom</label>
+        <label><input type="checkbox" name="q1" value="river"> B. To earn steady income from my money</label>
+        <label><input type="checkbox" name="q1" value="wolf"> C. To learn a system and beat the game</label>
+        <label><input type="checkbox" name="q1" value="falcon"> D. I love the action and fast moves</label>
+      </div>
+      <div class="question">
+        <h2>2. What feels most natural to you?</h2>
+        <label><input type="checkbox" name="q2" value="oak"> A. Thinking long-term and planning ahead</label>
+        <label><input type="checkbox" name="q2" value="river"> B. Managing things carefully over time</label>
+        <label><input type="checkbox" name="q2" value="wolf"> C. Strategizing and reacting to data</label>
+        <label><input type="checkbox" name="q2" value="falcon"> D. Making fast decisions and adjusting in real time</label>
+      </div>
+      <div class="question">
+        <h2>3. How do you respond when a trade goes bad?</h2>
+        <label><input type="checkbox" name="q3" value="oak"> A. I zoom out and remember the big picture</label>
+        <label><input type="checkbox" name="q3" value="river"> B. I rebalance or shift slowly</label>
+        <label><input type="checkbox" name="q3" value="wolf"> C. I assess what went wrong and adjust my system</label>
+        <label><input type="checkbox" name="q3" value="falcon"> D. I move fast — no time to dwell</label>
+      </div>
+      <div class="question">
+        <h2>4. Which of these appeals most to you?</h2>
+        <label><input type="checkbox" name="q4" value="oak"> A. Watching my wealth grow quietly over years</label>
+        <label><input type="checkbox" name="q4" value="river"> B. Receiving consistent payouts from my investments</label>
+        <label><input type="checkbox" name="q4" value="wolf"> C. Spotting setups and capitalizing on edge</label>
+        <label><input type="checkbox" name="q4" value="falcon"> D. Quick trades, quick hits — move on</label>
+      </div>
+      <div class="question">
+        <h2>5. How much time are you willing to commit each week?</h2>
+        <label><input type="checkbox" name="q5" value="oak"> A. A few minutes to rebalance or check in</label>
+        <label><input type="checkbox" name="q5" value="river"> B. A few hours spread out during the week</label>
+        <label><input type="checkbox" name="q5" value="wolf"> C. Focused daily or weekly research blocks</label>
+        <label><input type="checkbox" name="q5" value="falcon"> D. I'm trading live during market hours</label>
+      </div>
+      <div class="question">
+        <h2>6. What do you want to feel when you look at your portfolio?</h2>
+        <label><input type="checkbox" name="q6" value="oak"> A. Peace — I don’t want to think about it constantly</label>
+        <label><input type="checkbox" name="q6" value="river"> B. Stability and cash flow coming in</label>
+        <label><input type="checkbox" name="q6" value="wolf"> C. Confidence in my setups</label>
+        <label><input type="checkbox" name="q6" value="falcon"> D. Excitement and action</label>
+      </div>
+      <div class="question">
+        <h2>7. What motivates you the most?</h2>
+        <label><input type="checkbox" name="q7" value="oak"> A. Freedom through financial security</label>
+        <label><input type="checkbox" name="q7" value="river"> B. Income I can depend on</label>
+        <label><input type="checkbox" name="q7" value="wolf"> C. Mastery and optimization</label>
+        <label><input type="checkbox" name="q7" value="falcon"> D. Challenge and adrenaline</label>
+      </div>
+      <button id="submitQuiz" type="button">🔍 See My Archetype</button>
+      <div id="result"></div>
+
+      <!-- New Link Section -->
+      <div class="more-link">
+        <p>🔎 Want to dive deeper into your archetype?</p>
+        <a href="archetypes.html">Explore All Four Archetypes Here →</a>
+      </div>
+    </form>
+  </div>
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("mySidebar");
+      sidebar.style.left = (sidebar.style.left === "0px") ? "-250px" : "0px";
+    }
+    document.getElementById('submitQuiz').addEventListener('click', () => {
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+      const scores = { oak: 0, river: 0, wolf: 0, falcon: 0 };
+      checkboxes.forEach(box => {
+        scores[box.value]++;
+      });
+      const highest = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
+      const descriptions = {
+        oak: "🌳 You're an Oak Tree! <br> patient, long-term, grounded. You build wealth slow and steady.",
+        river: "🌊 You're a River! <br> you want consistent income, cash flow, and peace of mind.",
+        wolf: "🐺 You're a Wolf! <br> tactical, thoughtful, and you like to strike when the setup’s right.",
+        falcon: "🦅 You're a Falcon! <br> fast-moving, intuitive, and built for speed and focus."
+      };
+      const resultBox = document.getElementById('result');
+      resultBox.style.display = 'block';
+      resultBox.innerHTML = `<h2>Your Archetype:</h2><p>${descriptions[highest]}</p>`;
+    });
+  </script>
+</body>
+</html>

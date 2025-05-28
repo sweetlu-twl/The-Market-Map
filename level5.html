@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 5 – Pick Your Market</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600;700&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: black;
+    }
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      background-color: #002f4a;
+      padding-top: 60px;
+      transition: 0.3s;
+      overflow-y: auto;
+      z-index: 999;
+    }
+    .sidebar a {
+      padding: 12px 20px;
+      text-decoration: none;
+      font-size: 1rem;
+      color: white;
+      display: block;
+    }
+    .sidebar a:hover {
+      background-color: #014e79;
+    }
+    .hamburger {
+      font-size: 36px;
+      cursor: pointer;
+      position: fixed;
+      top: 10px;
+      left: 20px;
+      color: white;
+      background-color: #002f4a;
+      padding: 2px 6px;
+      border-radius: 3px;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px 40px 20px;
+    }
+    h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: 2.4rem;
+      background-color: #002f4a;
+      color: white;
+      padding: 20px;
+      margin-bottom: 0.5em;
+    }
+    h2 {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      color: #002f4a;
+    }
+    p, ul {
+      font-size: 1rem;
+      margin-bottom: 1.2em;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .mission {
+      background-color: #002f4a;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 2.5rem;
+    }
+    .mission h2 {
+      color: white;
+      font-size: 1.4rem;
+    }
+    a {
+      color: #003d7a;
+      text-decoration: underline;
+    }
+    .maproom-button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: #002f4a;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hamburger" onclick="toggleSidebar()">☰</div>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="index.html">🏠 Intro Zone</a>
+    <a href="level0.html">🧠 Level 0 – Know Yourself</a>
+    <a href="quiz.html">🧪 Archetype Quiz</a>
+    <a href="level1.html">🛒 Level 1 – Place a Trade</a>
+    <a href="level2.html">📈 Level 2 – Read a Chart</a>
+    <a href="level3.html">📋 Level 3 – Build Your Watchlist</a>
+    <a href="level4.html">🛡️ Level 4 – Risk & Survival</a>
+    <a href="level5.html">⚔️ Level 5 – Pick Your Market</a>
+  </div>
+
+  <div class="container">
+    <h1>⚔️ Level 5: Pick Your Market</h1>
+    <p>Now that you know how to trade — it’s time to decide <em>what</em> you want to trade. Different markets move differently, and the one you choose should match your personality, schedule, and risk appetite.</p>
+
+    <h2>🎯 Objective</h2>
+    <p>Explore different asset classes and choose one to start focusing on. Learn how each one behaves and what makes it unique.</p>
+
+    <h2>🌍 Market Categories</h2>
+    <ul>
+      <li><strong>U.S. Stocks:</strong> Public companies (AAPL, TSLA). High volume, news-driven, great for beginners.</li>
+      <li><strong>ETFs:</strong> Baskets of assets like SPY (S&P 500), QQQ (Tech), or XLE (Energy). Good for thematic plays.</li>
+      <li><strong>Options:</strong> Contracts that let you bet on movement, direction, or time. High risk, high reward.</li>
+      <li><strong>Futures:</strong> Leverage-heavy instruments that trade commodities, indexes, or currencies. Institutional feel.</li>
+      <li><strong>Crypto:</strong> 24/7 market driven by narrative, hype, and sentiment. Great for volatility junkies.</li>
+      <li><strong>Forex:</strong> Trading global currencies. Very technical. Huge liquidity. Open 5 days a week, nearly 24h.</li>
+      <li><strong>Collectibles:</strong> Sneakers, vintage tees, Pokémon cards, watches, art. Non-traditional, but real markets.</li>
+      <li><strong>Real Estate:</strong> Rental income, appreciation, and cash flow. Requires time, money, or partners.</li>
+    </ul>
+
+    <h2>🧭 How to Choose?</h2>
+    <ul>
+      <li><strong>Time:</strong> Can you trade during market hours or only after hours?</li>
+      <li><strong>Capital:</strong> Do you have $500, $5,000, or $50,000?</li>
+      <li><strong>Emotions:</strong> Are you a thrill seeker or a slow & steady planner?</li>
+      <li><strong>Interests:</strong> Do you like tech? Energy? Fashion? Global news?</li>
+    </ul>
+    <p>There’s no “best” market — just the one you’ll show up for every day with curiosity and discipline.</p>
+
+    <h2>🧠 Why This Matters</h2>
+    <ul>
+      <li><strong>You can't trade everything.</strong> Focus creates clarity. Choose one market and go deep.</li>
+      <li><strong>Each market has a different rhythm.</strong> You’ll find your edge faster when you understand its quirks.</li>
+      <li><strong>Your edge isn’t just in your system — it’s in the world you play in.</strong></li>
+    </ul>
+
+    <div class="mission">
+      <h2>🎮 Your Mission</h2>
+      <p>Choose one market to start mastering. Don’t worry — you can always change later.</p>
+      <ul>
+        <li>✅ Pick one market from the list that resonates most with you</li>
+        <li>✅ Research 3 popular players in that space (tickers, names, platforms, etc.)</li>
+        <li>✅ Watch their price charts for a week — no trades, just observations</li>
+        <li>✅ Log what you notice: trends, volume spikes, emotional candles</li>
+        <li>✅ Commit to trading in that lane for the next 30 days</li>
+      </ul>
+      <p>Freedom begins with a focused foundation. Choose your battlefield. Study its terrain. And show up like a professional.</p>
+    </div>
+
+    <div style="margin-top: 40px; text-align: center;">
+      <a href="maproom.html" class="maproom-button">🎉 Visit The Map Room</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("mySidebar");
+      sidebar.style.left = (sidebar.style.left === "0px") ? "-250px" : "0px";
+    }
+  </script>
+
+</body>
+</html>
