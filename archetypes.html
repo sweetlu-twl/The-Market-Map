@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>The Market Map – Archetype Breakdown</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🧬 Your Archetype</title>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600;700&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
   <style>
     body {
@@ -13,6 +13,7 @@
       background-color: #fdfdfd;
       color: black;
     }
+
     .sidebar {
       height: 100%;
       width: 250px;
@@ -25,6 +26,7 @@
       overflow-y: auto;
       z-index: 999;
     }
+
     .sidebar a {
       padding: 12px 20px;
       text-decoration: none;
@@ -32,9 +34,11 @@
       color: white;
       display: block;
     }
+
     .sidebar a:hover {
       background-color: #014e79;
     }
+
     .hamburger {
       font-size: 36px;
       cursor: pointer;
@@ -46,163 +50,228 @@
       padding: 2px 6px;
       border-radius: 3px;
       z-index: 1000;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
+
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 60px 20px 40px 20px;
+      padding: 80px 20px 60px 20px;
     }
+
     h1 {
       font-family: 'EB Garamond', serif;
       font-size: 2.4rem;
       background-color: #002f4a;
       color: white;
       padding: 20px;
-      margin-bottom: 1em;
+      margin-bottom: 0.5em;
+      text-align: center;
     }
+
     .archetype {
-      margin-bottom: 4rem;
-      padding: 20px;
-      border: 2px solid #002f4a;
+      background-color: #f1f9ff;
+      border-left: 6px solid #002f4a;
       border-radius: 10px;
-      background: white;
+      margin-bottom: 2rem;
+      padding: 20px 25px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
     }
+
     .archetype h2 {
-      font-family: 'EB Garamond', serif;
       font-size: 1.8rem;
-      margin-bottom: 0.5rem;
-    }
-    .archetype-icon {
-      font-size: 2rem;
-      margin-right: 10px;
-    }
-    .archetype h3 {
-      margin-top: 1.5rem;
+      margin-bottom: 0.2em;
+      font-family: 'EB Garamond', serif;
       color: #002f4a;
     }
-    ul {
-      margin-left: 1.5rem;
+
+    .archetype h3 {
+      font-size: 1.2rem;
+      margin-top: 1.5em;
+      color: #002f4a;
+    }
+
+    .archetype p, .archetype ul {
+      font-size: 1rem;
       line-height: 1.6;
     }
-    .tribe {
+
+    .archetype ul {
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+      padding-left: 20px;
+    }
+
+    .tagline {
       font-style: italic;
-      background-color: #e8f1f7;
-      padding: 12px;
-      border-left: 5px solid #002f4a;
-      margin-top: 1rem;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    #quizResult {
+      background-color: #002f4a;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      display: none;
+      text-align: center;
+    }
+
+    #quizResult h2 {
+      margin-top: 0;
     }
   </style>
 </head>
 <body>
+
   <div class="hamburger" onclick="toggleSidebar()">☰</div>
   <div id="mySidebar" class="sidebar">
     <a href="index.html">🏠 Intro Zone</a>
     <a href="level0.html">🧠 Level 0 – Know Yourself</a>
     <a href="quiz.html">🧪 Archetype Quiz</a>
-    <a href="archetypes.html">🔍 Archetype Breakdown</a>
+    <a href="archetype.html">🧬 Your Archetype</a>
     <a href="level1.html">🛒 Level 1 – Place a Trade</a>
     <a href="level2.html">📈 Level 2 – Read a Chart</a>
     <a href="level3.html">📋 Level 3 – Build Your Watchlist</a>
     <a href="level4.html">🛡️ Level 4 – Risk & Survival</a>
     <a href="level5.html">⚔️ Level 5 – Pick Your Market</a>
+    <a href="maproom.html">🎉 The Map Room</a>
   </div>
 
   <div class="container">
-    <h1>🔍 Meet Your Archetype</h1>
+    <h1>🧬 Your Archetype</h1>
+    <div id="quizResult"></div>
 
     <div class="archetype">
-      <h2><span class="archetype-icon">🌳</span>The Oak</h2>
-      <p>Strong, patient, and deeply rooted. You think in years, not days. The Oak plays the long game — compounding wealth through time and consistency.</p>
-      <h3>🧠 Strengths:</h3>
+      <h2>🌲 The Sentinel</h2>
+      <p class="tagline">The Long-View Guardian</p>
+      <p>You are grounded, wise, and patient. The Sentinel sees time as the ultimate edge — not something to escape. You don’t chase. You wait. Your greatest gift is your ability to withstand storms, zoom out, and act only when conviction is high. You're not here for dopamine. You're here for freedom.</p>
+      <h3>🧠 Core Traits:</h3>
       <ul>
-        <li>Incredible patience and emotional control</li>
-        <li>Thinks long-term with a strong vision for the future</li>
-        <li>Less reactive to noise or short-term volatility</li>
+        <li>Calm under pressure</li>
+        <li>Introspective and long-term thinker</li>
+        <li>Values freedom, not thrills</li>
+        <li>Trusts process over speed</li>
+      </ul>
+      <h3>⚔️ Strengths:</h3>
+      <ul>
+        <li>Emotional mastery — you don’t get shaken easily</li>
+        <li>Unshakable conviction in your vision</li>
+        <li>Rarely makes impulsive decisions</li>
+        <li>Strong understanding of compounding</li>
       </ul>
       <h3>⚠️ Watch Out For:</h3>
       <ul>
-        <li>Analysis paralysis when starting something new</li>
-        <li>Overlooking opportunities due to overly slow action</li>
-        <li>Feeling disconnected from faster-paced markets</li>
+        <li>Overanalyzing and missing great setups</li>
+        <li>Letting caution become inaction</li>
+        <li>Getting stuck in “someday” mode</li>
       </ul>
-      <h3>💼 Ideal Style:</h3>
+      <h3>💼 Best-Suited Strategies:</h3>
       <ul>
         <li>Long-term investing</li>
-        <li>Index funds, dividend portfolios, or slow swing trades</li>
+        <li>High-conviction swing positions</li>
+        <li>Trend-following or value-based strategies</li>
       </ul>
-      <div class="tribe">You belong to The Order of Oaks — a patient tribe of stewards building generational wealth one season at a time.</div>
+      <h3>🧙‍♂️ Archetype Inspiration:</h3>
+      <p>Warren Buffett’s patience, The Stoics’ calm in chaos</p>
+      <h3>🛡️ Your Clan:</h3>
+      <p><strong>The Order of Sentinels</strong> — A wise, slow-moving guild of traders who protect their capital and strike only when the signal is strong.</p>
     </div>
 
     <div class="archetype">
-      <h2><span class="archetype-icon">🌊</span>The River</h2>
-      <p>Steady, flowing, and strategic. The River cares about reliability, balance, and building systems that produce consistent returns.</p>
-      <h3>🧠 Strengths:</h3>
+      <h2>⚙️ The Architect</h2>
+      <p class="tagline">The Precision Builder</p>
+      <p>You’re a systems thinker obsessed with edge and optimization. You don’t just trade — you build frameworks that stand the test of time.</p>
+      <h3>🧠 Core Traits:</h3>
       <ul>
-        <li>Values consistency and sustainability</li>
-        <li>Great with budgeting, systems, and flow management</li>
-        <li>Less likely to overtrade or panic</li>
+        <li>Logical and structured</li>
+        <li>Obsessed with repeatability</li>
+        <li>Low emotional reactivity</li>
+        <li>Seeks constant improvement</li>
+      </ul>
+      <h3>⚔️ Strengths:</h3>
+      <ul>
+        <li>Backtesting, rule creation, strategy building</li>
+        <li>Can refine ideas into repeatable edge</li>
       </ul>
       <h3>⚠️ Watch Out For:</h3>
       <ul>
-        <li>Too cautious — missing bigger moves</li>
-        <li>Becoming overly attached to comfort</li>
-        <li>Difficulty pivoting during big shifts</li>
+        <li>Paralysis by analysis</li>
+        <li>Too rigid to adapt when markets change</li>
       </ul>
-      <h3>💼 Ideal Style:</h3>
+      <h3>💼 Best-Suited Strategies:</h3>
       <ul>
-        <li>Cash-flow investing</li>
-        <li>Dividend stocks, covered calls, real estate, or income-based strategies</li>
+        <li>Algo-driven or mechanical trading</li>
+        <li>Quantitative backtested systems</li>
       </ul>
-      <div class="tribe">You’re part of The Flowkeepers — steady builders who know that consistency compounds into calm, powerful wealth.</div>
+      <h3>🧙‍♂️ Archetype Inspiration:</h3>
+      <p>Mark Minervini’s structure, Ed Seykota’s models</p>
+      <h3>🛡️ Your Clan:</h3>
+      <p><strong>The Codewrights</strong> — Engineers of repeatable trading blueprints.</p>
     </div>
 
     <div class="archetype">
-      <h2><span class="archetype-icon">🐺</span>The Wolf</h2>
-      <p>Independent, tactical, and sharp. The Wolf is a system-builder and edge-finder. You want to understand how things work — and outsmart them.</p>
-      <h3>🧠 Strengths:</h3>
+      <h2>🔥 The Maverick</h2>
+      <p class="tagline">The High-Conviction Explorer</p>
+      <p>You’re bold, intuitive, and thrive on momentum and narrative. You spot trends early, trust your gut, and move fast when the setup calls.</p>
+      <h3>🧠 Core Traits:</h3>
       <ul>
-        <li>Loves strategy, testing, and technical analysis</li>
-        <li>Thinks like a game master — always optimizing</li>
-        <li>Disciplined when following a trusted plan</li>
+        <li>Fast-thinking, action-first</li>
+        <li>Strong gut instinct</li>
+        <li>Likes riding trends and momentum</li>
+      </ul>
+      <h3>⚔️ Strengths:</h3>
+      <ul>
+        <li>Great eye for emerging narratives</li>
+        <li>Natural ability to time fast moves</li>
       </ul>
       <h3>⚠️ Watch Out For:</h3>
       <ul>
-        <li>Overfitting or over-optimizing a system</li>
-        <li>Getting stuck in theory instead of action</li>
-        <li>Struggling when conditions change rapidly</li>
+        <li>Overconfidence</li>
+        <li>Skipping proper risk control</li>
       </ul>
-      <h3>💼 Ideal Style:</h3>
+      <h3>💼 Best-Suited Strategies:</h3>
       <ul>
-        <li>Swing trading, algorithmic or mechanical strategies</li>
-        <li>Backtesting and data-driven decision making</li>
+        <li>Swing trading hot sectors or tickers</li>
+        <li>Momentum setups and breakouts</li>
       </ul>
-      <div class="tribe">You’re a proud member of The Pack — a collective of sharp, data-loving traders who hunt for edge with surgical precision.</div>
+      <h3>🧙‍♂️ Archetype Inspiration:</h3>
+      <p>Jesse Livermore, Stanley Druckenmiller</p>
+      <h3>🛡️ Your Clan:</h3>
+      <p><strong>The Trailblazers</strong> — Fast-moving, trend-chasing risk-takers who don’t wait for permission.</p>
     </div>
 
     <div class="archetype">
-      <h2><span class="archetype-icon">🦅</span>The Falcon</h2>
-      <p>Fast, focused, and fierce. The Falcon loves action, speed, and making high-stakes decisions. You trust your instincts and thrive in motion.</p>
-      <h3>🧠 Strengths:</h3>
+      <h2>🧬 The Alchemist</h2>
+      <p class="tagline">The Inner Game Master</p>
+      <p>You understand that trading is 80% psychology. You flow with the market and use emotional clarity as your edge. To you, every loss is a lesson, and every gain a teacher.</p>
+      <h3>🧠 Core Traits:</h3>
       <ul>
-        <li>Quick reflexes and sharp pattern recognition</li>
-        <li>Confident under pressure</li>
-        <li>High energy and great at reading real-time moves</li>
+        <li>Emotionally intelligent</li>
+        <li>Flexible and philosophical</li>
+        <li>Introspective and mindful</li>
+      </ul>
+      <h3>⚔️ Strengths:</h3>
+      <ul>
+        <li>Mastery of emotion and mental game</li>
+        <li>Learning from experience</li>
       </ul>
       <h3>⚠️ Watch Out For:</h3>
       <ul>
-        <li>Overtrading or revenge trading</li>
-        <li>Burnout or emotional volatility</li>
-        <li>Ignoring risk in pursuit of the next hit</li>
+        <li>Relying too much on feel</li>
+        <li>Difficulty scaling or systematizing</li>
       </ul>
-      <h3>💼 Ideal Style:</h3>
+      <h3>💼 Best-Suited Strategies:</h3>
       <ul>
-        <li>Day trading, scalping, momentum setups</li>
-        <li>Options, crypto, or futures for fast action</li>
+        <li>Discretionary chart-based trading</li>
+        <li>Flexible setups based on price action</li>
       </ul>
-      <div class="tribe">You belong to The Skyhunters — a bold tribe of high-speed specialists who fly fast, sharp, and with fearless intent.</div>
+      <h3>🧙‍♂️ Archetype Inspiration:</h3>
+      <p>Mark Douglas, Richard Dennis</p>
+      <h3>🛡️ Your Clan:</h3>
+      <p><strong>The Order of Flux</strong> — Adaptive traders guided by psychology, presence, and intuition.</p>
     </div>
-
   </div>
 
   <script>
@@ -210,6 +279,31 @@
       const sidebar = document.getElementById("mySidebar");
       sidebar.style.left = (sidebar.style.left === "0px") ? "-250px" : "0px";
     }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      const resultDiv = document.getElementById("quizResult");
+      const type = localStorage.getItem("quizArchetype");
+
+      if (type) {
+        let message = "";
+        switch (type) {
+          case "sentinel":
+            message = "🌲 You’re the <strong>Sentinel</strong> — Patient. Steady. Grounded.";
+            break;
+          case "architect":
+            message = "⚙️ You’re the <strong>Architect</strong> — System Builder. Logic-Focused. Tactical.";
+            break;
+          case "maverick":
+            message = "🔥 You’re the <strong>Maverick</strong> — Bold. Fast. Visionary.";
+            break;
+          case "alchemist":
+            message = "🧬 You’re the <strong>Alchemist</strong> — Emotionally Sharp. Creative. Intuitive.";
+            break;
+        }
+        resultDiv.innerHTML = `<h2>Your Archetype:</h2><p>${message}</p>`;
+        resultDiv.style.display = "block";
+      }
+    });
   </script>
 </body>
 </html>
